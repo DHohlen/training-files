@@ -1,0 +1,3 @@
+Ein Cache verfolgt zwei primäre Ziele.
+1. Zugriffszeiten werden verkürzt. Durch den Cache ist der Aufwand für eine schnelle Anbindung an den Hintergrundspeicher gering. Außerdem ist er kostengünstiger, da nur für den Cache eine schnelle Speichertechnik benötigt wird.
+2. Die Ausführungsgeschwindigkeit wird gesteigert. Dies ist möglich, da Prozesse und Anwendungen nicht auf den langsamen Hintergrundspeicher warten müssen. Dies kann natürlich nur klappen, wenn der Cache die benötigten Daten tatsächlich bereithält.

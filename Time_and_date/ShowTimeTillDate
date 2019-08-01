@@ -1,0 +1,48 @@
+Zeige die Zeit bis zu einem festgelegtem Datum (In Sekunden; In Stunden:Minuten:Sekunden; 
+(In Sekunden; In Tagen:Stunden:Minuten:Sekunden))
+
+
+var countDownDate = new Date("Aug 1, 2019 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+/*
+for showing only seconds instead only use
+var seconds = Math.floor(distance / 1000);
+rest of changes are trivial
+*/
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Ausbildung START";
+  }
+}, 1000);
+
+<p id="countdown"></p>
+
+#countdown {
+  color: chartreuse;
+  background-color: hotpink;
+  font-family: 'Comic Sans MS', 'Helvetica';
+  text-align: center;
+  font-size: 16pt;
+   text-shadow: 2px 2px navy;
+}

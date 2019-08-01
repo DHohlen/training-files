@@ -1,0 +1,19 @@
+Unterschiede zwischen Deklaration und Initialisierung
+
+Mit der Deklaration bennenen wir eine Variable und machen diese dem Compiler bekannt. D.h. der Compiler weiß nun, 
+ob wir uns im Laufe unseres Programms beim Eintippen des Variablennames vertippt haben. 
+Da jeder Variablenname eines Datentyps eindeutig sein muss, kann der Compiler auch den Fehler abfangen, wenn versucht wird, 
+zwei Variablen mit dem gleichen Typ und gleichen Namen zu deklarieren.
+
+Haben wir eine Variable deklariert, so hat sie einen beliebigen Wert – 
+je nach dem was gerade im zugewiesenen Speicherbereich steht. Da wir mit solch einem Zufallswert nicht arbeiten wollen, 
+können wir mittels Initialisierung die Variable auf einen initialen Anfangswert setzen. 
+Variablen sollten immer initialisiert werden, um zu vermeiden, dass mit einem Zufallswert gearbeitet wird.
+
+
+let summe; //Deklaration
+
+summe = 1; //Initialisierung
+
+in den meisten Programmiersprachen kann jedoch auch beides in einer Zeile abgefrühstückt werden:
+let summe = 1;

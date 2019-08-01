@@ -1,0 +1,13 @@
+Zuerst sei anzumerken, dass selbst wenn die Hintergründe sämtlicher Elemente per CSS pink eingefärbt werden, sich nur überraschend wenig auf der Seite ändert, da viel mit Grafiken und Bildern gearbeitet wird, die sich mit CSS nicht umfärben lassen. Dann fällt auf, dass sich stets "Blöcke" verfärben. Dadurch wird deutlich, wie die einzelnen Elemente auf der Seite angeordnet sind. 
+Leider ist mir bei der Reihenfolge des Einfärbens nichts von Bedeutung aufgefallen.
+
+#test - ID-Selektoren. Dieser grundlegende Selektor wählt Knoten anhand des Wertes ihres id Attributs aus. Es sollte nur ein Element mit der angegebenen ID in einem Dokument geben.
+.test - Klassenselektoren. Dieser grundlegende Selektor wählt Elemente anhand ihres class Attributs aus.
+test - Typselektoren. Dieser grundlegende Selektor wählt alle Elemente aus, die den angegebenen Namen matchen.
+test test - Nachfahrenselektoren. Der ' '-Kombinator wählt Knoten aus, die (nicht zwangsweise direkte) Kinder des davor angegebenen Elements sind.
+test > test - Kindselektoren. Der '>'-Kombinator wählt Knoten aus, die direkte Kinder des davor angegebenen Elements sind.
+test:not(.test) - Die CSS Pseudoklasse :not(X) ist eine Negation zu einem Selektor X als Argument und wird als Funktion angegeben. Sie passt auf Elemente, die nicht durch das Argument repräsentiert werden. X darf keinen weiteren Negationsselektor beinhalten.
+test[test=test] - Attributselektoren. Dieser grundlegende Selektor wählt Knoten anhand des Wertes eines ihrer Attribute aus. '[attr]', '[attr=value]', etc.
+test::before - '::before' erzeugt ein Pseudoelement, dass das erste Kind des gematchten Elements ist. Es wird oft zu verwendet, um kosmetische Inhalte unter Verwendung der content Eigenschaft zu einem Element hinzuzufügen. Dieses Element ist standardmäßig inline.
+test + test - Angrenzende Geschwisterselektoren. Der '+'-Kombinator wählt Knoten aus, die direkt dem davor angegebenen Element folgen.
+test ~ test -  Allgemeine Geschwisterselektoren. Der '~'-Kombinator wählt Knoten aus, die dem davor angegeben Element (nicht zwingend direkt) folgen, falls sie sich dasselbe Elternelement teilen.

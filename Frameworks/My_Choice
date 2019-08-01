@@ -1,0 +1,7 @@
+Das Javascript-Framework meiner Wahl ist jquery.
+Warum?
+Das hat vielerlei Gründe. Zum einen ist jquery ein sehr geschichtsträchtiges Framework. In einer Zeit geboren, in der zwischen unterschiedlichen Browsern noch regelmäßig Kompatibilitätsprobleme herrschten, wurde es durch jquery möglich gemeinsame Standards einzuführen, die zudem simpel anzuwenden waren.
+Aus heutiger Sicht verlässt jquery langsam aber sicher die Bühne der Relevanz und macht anderen Frameworks wie AngularJS und insbesondere React Platz.
+Aus diesem Grund ist es ratsam, für neue Projekte auf die Nutzung von jquery zu verzichten und stattdessen zu einem anderen Framework (s.o.) zu greifen. Aufgrund von Abhängigkeiten einer Bibliotheken kann jquery in einigen Fällen jedoch noch immer notwendig sein.
+Außerdem bietet jquery den Vorteil, auch ältere Browser(versionen) bedienen zu können und hat daher eine hohe Kompatibilität vorzuweisen.
+Ganz unabhängig von allen rationalen Gründen: ich muss eh damit arbeiten, also kann ich mich auch damit auseinander setzen.

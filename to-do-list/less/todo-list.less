@@ -1,0 +1,87 @@
+@color_1: #ffffff;
+@color_2: #000;
+@background_color_1: #fc999b;
+
+body {
+  background: #dfdfdf;
+}
+
+.container {
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: white;
+  border-radius: 5px;
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+  padding: 4px 15px 4px 5px;
+}
+
+#toDoList__addButton, #toDoList__showDeletedButton {
+  display: inline-block;
+  background-color: @background_color_1;
+  color: @color_1;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}
+
+.toDoList__List {
+  padding-left: 20px;
+
+  li {
+    padding: 5px;
+    color: @color_2;
+
+    &:nth-child(even) {
+      background: #dfdfdf;
+    }
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+  filter: alpha(opacity=0);
+  animation-name: toDoList__List__Item--hiding;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  &.isInvisible {
+    display: none;
+    opacity: 1;
+  }
+
+  &.isVisible {
+    animation-name: toDoList__List__Item--hiding;
+    animation-play-state: paused;
+    opacity: 1;
+  }
+}
+
+
+li {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes toDoList__List__Item--hiding {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

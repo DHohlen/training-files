@@ -1,0 +1,8 @@
+Zwischenspeicher (Hard- oder Software)
+Zugriffszeiten verkürzen
+Schneller Pufferspeicher
+Wesentlich geringere Speichergröße als eigentlicher Hintergrundspeicher
+Häufiger benötigte Daten von langsamen Medium in Zwischenspeicher geladen und dort bereitgehalten. Wenn auf die Daten zugegriffen werden muss, werden sie direkt vom Cache bezogen.
+Bleibt für Anwender in der Regel verborgen
+Inkonsistenten und verschiedene Datenstände werden über unterschiedliche Methoden verhindert.
+Explizite Cache-Aktualisierung durch den Nutzer

@@ -1,0 +1,19 @@
+Welche Typen von Variablen es gibt ist stets von der jeweiligen Programmiersprache abhängig.
+
+Javascript hat folgende Variablentypen: var, let, const
+
+Da Javascript keine starke Typisierung aufweist, kann in jedem Variablentyp jeder Datentyp gespeichert werden
+
+Darunter fallen:
+
+boolean: True oder false - kann nur einen dieser Wahrheitswerte annehmen
+string: 'text' - ermöglicht es Worte, Sätze und Ähnliches in der Variable zu speichern
+number: 69 - hat den Wert einer Zahl
+object: [20, 20, 20] - kann in Form verschiedener Objekte aufrtreten, z.B. Arrays, Promises, etc.
+function: function lol() - ermöglicht es codeblöcke durch aufrufen des Variable auszuführen und 
+                            dabei evtl. noch bestimmte Parameter an die FUnktion zu übergeben
+
+In Javascript sind aufgrund der wenig starken Typisierung folgendes Argument legitim:
+var = 69 + 'text'
+es findet eine implizite Typumwandlung statt. var hat nun den Wert '69text' also einen String.
+

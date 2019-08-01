@@ -1,0 +1,6 @@
+
+1. Häufig aktualisierte Inhalte können so markiert werden, dass sie nicht im Cache gespeichert werden.
+2. Daten können mit einem "Verfallsdatum" versehen werden, so dass sie nach Erreichen diesen Datums automatisch aus dem Cache gelöscht werden.
+3. Caches können durch Algorithmen verwaltet werden.
+4. Aktualisierte Daten können umbenannt werden, um fehlerhaftes laden zu umgehen.
+

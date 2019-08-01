@@ -1,0 +1,14 @@
+Probleme und deren Ursache:
+
+Caches bieten viele Vorteile und sind unverzichtbar, können jedoch auch schnell zu Problemen führen. 
+Die Ursache ist eine einfache Mechanik: Für eine maximale Effizienz versuchen Caches, gespeicherte Elemente möglichst lange wiederzuverwenden. Dazu erhält jedes Element eine möglichst hohe Gültigkeitsdauer, eine sogenannte time-to-live (TTL), bei Erreichen wird es gelöscht. Doch wenn sich Elemente vor dem Erreichen der TTL verändern bzw. überflüssig werden, muss eine “Cache-Invalidierung” durchgeführt werden. Dabei wird z.B. ein verändertes Produktbild im Browser-Cache des Kunden ausgetauscht oder ein altes Template im Shopware HTTP-Cache gelöscht.
+
+Dieses Zusammenspiel aus möglichst langer Nutzung und Cache-Invalidierung von Elementen ist ein aufwändiger und fehleranfälliger Prozess. Im Praxisalltag entstehen immer wieder Schwierigkeiten:
+
+Fehlerhafte Aktualisierungen: Wenn Elemente Ihres Shops wie z.B. Bilder oder Preise aktualisiert werden, kann es zu Fehlern der Cache-Invalidierung im Shopware HTTP-Cache oder Browser-Cache kommen. Dann werden weiterhin alte Elemente aus dem Cache geladen und die daraus erstellte Website nicht aktualisiert.
+
+Hohe Komplexität: Die unterschiedlichen Cache-Ebenen müssen perfekt aufeinander abgestimmt sein, falsche Konfigurationen können einen Shop stark verlangsamen. Dabei erhöhen die vielfältigen Einstellungen jedes einzelnen Caches die Komplexität und erschweren die Lokalisierung von Fehlern.
+
+Erschwerte Wartung: Wenn Sie Veränderungen in Ihrem Shop vornehmen, z.B. Templates bearbeiten oder Einstellungen ändern, werden diese aufgrund der Caches häufig nicht direkt angezeigt. Erst ein gezieltes Leeren bzw. Deaktivieren der abhängigen Caches schafft Abhilfe.
+
+Veraltete Konfigurationsdaten: Shopware verwendet Caches nicht nur zum Beschleunigen der Websites, sondern auch zum Speichern von Konfigurationsdaten des Shops und dessen Plugins. Bei Updates können diese veralteten Daten im Cache zu Problemen führen.

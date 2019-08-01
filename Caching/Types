@@ -1,0 +1,27 @@
+Grundsätzlich unterscheidet man zwischen Hardware- und Software-Caches.
+
+Der Hardware-Cache befindet sich zwischen Prozessor und Hintergrundspeicher.
+
+Der Prozessorspeicher bspw. Liegt zwischen Prozessor und Arbeitsspeicher und ist in mehrere Stufen unterteilt:
+L1-Cache / First-Level-Cache
+In der Regel ist der L1-Cache nicht besonders groß. Aus Platzgründen bewegt er sich in der Größenordnung von 16 bis 64 kByte. 
+Meistens ist der Speicherbereich für Befehle und Daten voneinander getrennt. Die Bedeutung des L1-Caches wächst mit der höheren Geschwindigkeit der CPU.
+Im L1-Cache werden die am häufigsten benötigten Befehle und Daten zwischengespeichert, 
+damit möglichst wenige Zugriffe auf den langsamen Arbeitsspeicher erforderlich sind. Dieser Cache vermeidet Verzögerungen in der Datenübermittlung und hilft dabei die CPU optimal auszulasten.
+L2-Cache / Second-Level-Cache
+Im L2-Cache werden die Daten des Arbeitsspeichers (RAM) zwischengespeichert.
+Über die Größe des L2-Caches versorgen die Prozessorhersteller die unterschiedlichen Marktsegmente mit speziell modifizierten Prozessoren. Die Wahl zwischen einem Prozessor mit mehr Taktgeschwindigkeit oder einem größeren L2-Cache 
+lässt sich vereinfacht wie folgt beantworten: Mit einem höheren Takt laufen einzelne Programme, insbesondere mit hohem Rechenbedarf, schneller. Sobald mehrere Programme gleichzeitig laufen, ist ein größerer Cache von Vorteil. In der Regel 
+sind normale Desktop-Computer mit einem Prozessor, der einen großen Cache hat, besser bedient, als mit einem Prozessor, der eine hohe Taktrate hat.
+Als der Speichercontroller vom Chipsatz in den Prozessor verlagert wurde und der Prozessor damit viel schneller auf den Arbeitsspeicher zugreifen konnte, sank damit die Bedeutung des L2-Caches. Während die Größe des L2-Caches geringer wurde, wurde der L3-Cache ordentlich aufgerüstet.
+L3-Cache / Third-Level-Cache
+In der Regel verwenden Multicore-Prozessoren einen integrierten L3-Cache. Mit dem L3-Cache kann das Cache-Koheränz-Protokoll von Multicore-Prozessoren viel schneller arbeiten. Dieses Protokoll gleicht die Caches aller Kerne ab, damit die Datenkonsistenz erhalten bleibt. Der L3-Cache hat also weniger die Funktion eines Caches, sondern soll das 
+Cache-Koheränz-Protokoll und den Datenaustausch zwischen den Kernen vereinfachen und beschleunigen.
+Inklusiv-Cache und Exklusiv-Cache
+Mit den Multicore-Prozessoren kamen die Begriffe Inklusiv- und Exklusiv-Cache auf. Inklusiv-Cache bedeutet, dass Daten im L1-Cache auch im L2- und L3-Cache vorhanden sind. So lässt sich die Datenkonsistenz zwischen den Kernen leichter sicherstellen. Im Vergleich zum Exklusiv-Cache wird etwas Speicherkapazität verschenkt, weil die Daten redundant 
+in den Caches mehrerer CPU-Kerne liegen.
+Exklusiv-Cache bedeutet, der Cache steht einem Prozessor-Kern exklusiv, also für ihn alleine, zur Verfügung. Er muss den Cache nicht mit einem anderen Kern teilen. Ein Nachteil davon ist, dass mehrere Prozessor-Kerne untereinander dann nur auf einem Umweg Daten miteinander austauschen können.
+
+Der Software-Cache ist nach dem gleichen Grundprinzip aufgebaut. 
+
+Ein Webbrowser-Cache bspw. speichert von einem Webbrowser abgerufene Daten wie Bilder oder Videos als lokale Kopie auf dem Rechner. Das nächste Mal, wenn der Browser die Daten benötigt, bezieht er sie vom lokalen Cache, statt vom Webserver. Damit verringern sich nicht nur die Ladezeiten, sondern auch entlastet auch die Webserver und Bandbreite.
