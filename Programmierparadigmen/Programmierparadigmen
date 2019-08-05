@@ -1,0 +1,15 @@
+Decorator-Pattern:
+The important aspect of this pattern is that it lets decorators appear anywhere a VisualComponent can. Use it when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing.On elf its main problems is the creation of lots of little objects. A design that uses Decorator often results in systems composed of lots of little objects that all look alike. The objects differ only in the way they are interconnected, not in their class or in the value of their variables. Although these systems are easy to customize by those who understand them, they can be hard to learn and debug.
+
+Factory-Pattern:
+
+Gateway-Pattern:
+
+Interfaces vs Abstrakte Klassen:
+
+Observer-Pattern:
+
+Dependency-Injection:
+
+Repositories:
+

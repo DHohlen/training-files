@@ -1,0 +1,24 @@
+Firewalls
+Wie funktioniert eine Firewall?
+Eine Firewall ist eine Zusammenfassung mehrerer verschiedener Sicherheitsprogramme. Sie sitzt genau an der Verbindungsstelle zwischen dem lokalen Netzwerk und dem Internet. Sie bildet eine Art Nadelöhr, durch das sich alle Daten von und ins Internet zwängen müssen.
+Die Firewall legt fest, welche Dienste im Internet überhaupt genutzt werden dürfen. Und sie legt fest, auf welchen Wegen Dienste aus dem Internet Daten an Computer im lokalen Netzwerk schicken dürfen. Beispielsweise kann eine Firewall erlauben, dass nur Internet-Seiten aus dem WWW abgerufen werden dürfen. Gleichzeitig kann sie aber bestimmte Internet Seiten sperren oder beispielsweise verhindern, dass auf Internet Seiten gespeicherte Java-Programme ausgeführt werden.
+
+
+Was sind Ports?
+Ein Port ist der Teil einer Netzwerk-Adresse, der die Zuordnung von TCP- und UDP-Verbindungen und -Datenpaketen zu Server- und Client-Programmen durch Betriebssysteme bewirkt. Zu jeder Verbindung dieser beiden Protokolle gehören zwei Ports, je einer auf Seiten des Clients und des Servers.
+Ein WWW-Server zum Beispiel erwartet alle Informationen am Port 80, ein SMTP-Server für den Mail-Versand verwendet den Port 25. Geht eine Anforderung an einen anderen Port, rührt sich der Server nicht (außer der Systemverwalter hat dies zuvor so festgelegt).
+
+
+Welche Ports werden genutzt? (von z.b. ssh, http, https...)
+Gültige Portnummern sind 0 bis 65535.
+
+System Ports - Ports 0 bis 1023
+Diese Ports werden auch well-known Ports genannt und sind für Dienste reserviert, wenn sie nicht bereits als „reservierte Ports“ der IANA selbst (etwa für zukünftige Erweiterungen) zugewiesen worden sind, was etwa insbesondere auf die Intervall-Grenzen zutrifft (zum Beispiel: 0, 1023, 1024), die also nicht für die Verwendung für Server zur Verfügung stehen. Neue Zuordnungen erfolgen nur unter Beteiligung der Internet Engineering Task Force (IETF).
+
+User Ports - Ports 1024 bis 49151
+Diese Ports sind für registrierte Dienste vorgesehen, können aber auch für Clientprogramme verwendet werden. Die dynamische Zuordnung für Clientprogramme wird von der Mehrzahl der aktuellen Betriebssysteme nicht mehr durchgeführt, da hierfür die „Dynamic Ports“ vorgesehen sind. In diesem Bereich können auf Antrag neue Zuordnungen ohne Beteiligung der IETF erfolgen.
+
+Dynamic Ports - Ports 49152 bis 65535
+Diese Ports werden vom Betriebssystem dynamisch an Clientprogramme vergeben.
+
+Ergänzung: Linuxsysteme halten sich sehr oft nicht an diesen Standard und vergeben die Clientports im Bereich zwischen 32768 und 61000. Ursprünglich waren von der IANA die Ports ab 1024 für Clientprogramme vorgesehen. Bei der Umstellung des Portbereiches gab es jedoch einige Diskussionen, bis sich die heutige Einteilung durchsetzte. Die Umstellung wurde in Linux allerdings während der Diskussionszeit vorgenommen und nicht auf den endgültigen Standard umgesetzt. Als Begründung hierfür wird auch immer wieder angeführt, dass der Bereich der Dynamic Ports zu klein ist. Einige NAT-Router verwenden sogar noch niedrigere Ports. 
