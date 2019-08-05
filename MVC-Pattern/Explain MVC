@@ -1,0 +1,4 @@
+MVC steht für Model/View/Controller und ist eine Konvention, die zur besseren Übersicht über Anwendungen eingeführt wurde und besteht, wie der Name schon vermuten lässt, aus drei Komponenten.
+Model: Die Geschäftslogik. Verwaltet den Zustand von Objekten und kommuniziert in der Regel mit der Datenbank.
+View: Die Darstellung des Models. Ist (normalerweise) nicht direkt mit dem Model verbunden.
+Controller: Steht zwischen Model und View. Ist dafür zuständig Eingaben eines Nutzers entgegenzunehmen und weiterzuleiten.

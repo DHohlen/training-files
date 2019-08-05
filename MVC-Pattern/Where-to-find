@@ -1,0 +1,4 @@
+UNFERTIG!
+
+Das MVC-Pattern wird genutzt bei Anwendungen mit grafischer Benutzeroberfläche. Dabei ist anzumerken, dass die Grenzen in vielen Fällen mehrschichtig und nicht klar trennbar ist.
+So lässt sich z.B. im View selbst auch ein MVC-Pattern finden. 
