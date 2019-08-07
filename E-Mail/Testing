@@ -1,0 +1,2 @@
+Der Versuch das Mailing über Litmus zu testen ist leider gescheitert. Grund dafür ist die Notwendigkeit einer Kreditkarte zum Nutzen des Dienstes (zweiter Schritt bei der Anmeldung). Da ich die Kreditkartendaten nicht wahllos durch die Gegend werfen will, habe ich mich gegen die Nutzung von Litmus entschieden.
+Bei der Recherche nach Alternativen zu Litmus bin ich auf einige kostenfreie Dienste gestoßen, die allerdings alle keine hinreichenden Tests ermöglichten. Darunter GetResponse, Mailtrap und Putsmail.

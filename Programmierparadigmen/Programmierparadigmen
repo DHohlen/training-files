@@ -1,15 +1,20 @@
 Decorator-Pattern:
-The important aspect of this pattern is that it lets decorators appear anywhere a VisualComponent can. Use it when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing.On elf its main problems is the creation of lots of little objects. A design that uses Decorator often results in systems composed of lots of little objects that all look alike. The objects differ only in the way they are interconnected, not in their class or in the value of their variables. Although these systems are easy to customize by those who understand them, they can be hard to learn and debug.
+The important aspect of this pattern is that it lets decorators appear anywhere a VisualComponent can. Use it when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing. One of its main problems is the creation of lots of little objects. A design that uses Decorator often results in systems composed of lots of little objects that all look alike. The objects differ only in the way they are interconnected, not in their class or in the value of their variables. Although these systems are easy to customize by those who understand them, they can be hard to learn and debug.
 
 Factory-Pattern:
+Das Factory Pattern fällt in die Klasse der creational Patterns. Das Muster beschreibt, wie ein Objekt durch Aufruf einer Methode anstatt durch direkten Aufruf eines Konstruktors erzeugt wird.
 
 Gateway-Pattern:
 
+
 Interfaces vs Abstrakte Klassen:
+Interfaces sind zwar wie abstrakte Klassen vollständig als abstract deklariert (wenn auch implizit), jedoch enthalten Interfaces ausschließlich abstrakte Methoden und Konstanten. Alle Methoden eines Interface sind implizit abstract, und alle Datenelemente sind implizit final static. Abstrakte Klassen dagegen können sowohl variable Datenelemente als auch nicht abstrakte, implementierte Methoden besitzen.
 
 Observer-Pattern:
+Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. The key objects in this pattern are subject and observer. A subject may have any number of dependent observers. All observers are notified whenever the subject undergoes a change in state. In response, each observer will query the subject to synchronize its state with the subject's state. This kind of interaction is also known as publish-subscribe. The subject is the publisher of notifications. It sends out these notifications without having to know who its observers are. Any number of observers can subscribe to receive notifications.
 
 Dependency-Injection:
+Dependency Injection ist ein Entwurfsmuster, das die Abhängigkeiten eines Objekts zur Laufzeit reglementiert: Benötigt ein Objekt beispielsweise bei seiner Initialisierung ein anderes Objekt, ist diese Abhängigkeit an einem zentralen Ort hinterlegt – es wird also nicht vom initialisierten Objekt selbst erzeugt.
 
 Repositories:
 
