@@ -1,0 +1,3 @@
+Öffne eine CSV mit MS Excel. Warum wird die Preis-Spalte zerschossen? :’(
+
+Auch wenn es mitunter anders scheint, *.csv ist reiner Text in einem besonderen Darstellungsformat und kein Excel, selbst wenn das Symbol im Dateimanager etwas anderes ausdrückt.
