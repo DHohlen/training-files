@@ -1,1 +1,4 @@
 Warum kann ich eine auf dem Mac generierte CSV nicht korrekt auf dem Windows-Rechner öffnen?
+
+Excel for the Mac 2011 does a really stupid thing: In a misplaced homage to the classic Mac OS, line endings are actually carriage returns -- the character \r.
+This is the orphan disease of line ending problems. Everyone wants to talk to you about the much more prevalent "Windows vs. Unix" line ending problem, where Windows uses carriage return + line feed ("CRLF") or \r\n and Unix gets it right with line feed only or \n. Git is even prepared to help you navigate "Windows vs Unix" line ending problem. But that solution does absolutely zilch if you are suffering from naked carriage returns as line endings.
